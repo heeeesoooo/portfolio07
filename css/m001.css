@@ -1,0 +1,80 @@
+/* 기업개요 */
+.outline {
+    padding: 0 0 200px 0;
+    border-bottom: 1px solid #ddd;
+}
+
+.outline ul {
+    display: flex;
+    gap: 30px;
+}
+
+.outline ul li {
+    position: relative;
+}
+
+.outline ul li>img {
+    width: 100%;
+}
+
+.outline ul li .b_con {
+    position: absolute;
+    top: 80%;
+    left: 50%;
+    transform: translate(-50%, 0);
+
+    width: 80%;
+    background: #fff;
+    padding: 20px;
+    box-shadow: 10px 5px 5px rgba(0, 0, 0, 0.3);
+    word-break: keep-all;
+}
+
+.outline .inner {
+    height: 100%;
+}
+
+.outline ul li .b_con .subj {
+    font-size: 19px;
+    font-weight: 400;
+    color: #000000;
+    margin: 0 0 15px 0;
+
+}
+
+.outline ul li .b_con .explain {
+    font-size: 14px;
+}
+
+.message>.bg {
+    position: relative;
+}
+
+.message .bg>img {
+    width: 100%;
+}
+
+.message .c_text>img {
+    position: absolute;
+    top: 50%;
+}
+
+.message .c_text .h {
+    position: absolute;
+    top: 50%;
+    left: 60%;
+
+    font-size: 25px;
+}
+
+.message>.f_inner {
+    position: relative;
+}
+
+.message .a_body {
+    position: relative;
+}
+
+* {
+    outline: 1px solid tomato;
+}

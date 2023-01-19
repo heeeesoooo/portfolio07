@@ -1,6 +1,4 @@
-/* * {
-    outline: 1px solid tomato;
-} */
+/* 메인 배너 */
 
 .sub_banner {
     position: relative;
@@ -31,11 +29,15 @@
     font-weight: 500;
 }
 
+/* 메인 내용 */
+/* 브랜드 소개 */
 
 .sub_contents {
     position: relative;
     padding: 0 0 100px 0;
 }
+
+.sub_contents .brand_group {}
 
 .sub_contents .brand_group>ul {
     display: grid;
@@ -46,7 +48,9 @@
 .sub_contents .brand_group>ul>li {
     border: 1px solid #ddd;
     height: 200px;
+    display: block;
 }
+
 
 .sub_contents .brand_group>ul>li>.img_b {
     margin: 0 0 10px 0;
@@ -62,3 +66,163 @@
     line-height: 30px;
     margin: 30px 0 0 0;
 }
+
+/* 인재상 */
+.group p {
+    line-height: 1.5;
+}
+
+.color-green {
+    color: #3baf29;
+}
+
+.list-dot>li {
+    position: relative;
+    padding-left: 20px;
+    margin-bottom: 5px;
+    font-size: 20px;
+    line-height: 30px;
+}
+
+.list-dot>li::before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 0;
+    width: 4px;
+    height: 4px;
+    background: #3baf29;
+    border-radius: 100%;
+    margin: 0 0 0 10px;
+}
+
+/*  */
+
+
+.sub_contents .group {
+    position: relative;
+    display: flex;
+    height: 100%;
+    margin: 0 0 100px 0;
+}
+
+.sub_contents .group .title_txt {
+    width: 20%;
+    height: 40px;
+    font-size: 40px;
+    font-weight: 700;
+    position: sticky;
+    top: 70px;
+}
+
+.sub_contents .group .title_txt::after {
+    content: "";
+    position: absolute;
+    top: 50px;
+    left: 0;
+    width: 150px;
+    height: 2px;
+    background: #3baf29;
+}
+
+.sub_contents .group .cont {
+    width: 80%;
+    height: 100%;
+}
+
+.sub_contents .group .big {
+    font-size: 22px;
+    font-weight: 500;
+    line-height: 30px;
+    margin: 0 0 50px 0;
+}
+
+.sub_contents .group .cont .small {
+    padding: 0 0 30px 0;
+    border-bottom: 2px solid #666;
+}
+
+.talant>li {
+    display: flex;
+    padding: 30px 0;
+    align-items: center;
+}
+
+.talant>li~li {
+    border-top: 1px solid #ddd;
+}
+
+.talant .img_t {
+    position: relative;
+}
+
+
+.talant .img_t .txt_box {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    width: 100%;
+    color: #fff;
+    text-align: center;
+}
+
+.talant .img_t .txt_box p {
+    font-size: 40px;
+    font-weight: 600;
+    margin: 0 0 10px 0;
+}
+
+.talant .img_t .txt_box span {
+    display: block;
+    font-size: 20px;
+}
+
+
+/* 인사제도 */
+.half {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 30px;
+    margin: 0 0 20px 0;
+}
+
+.t2 {
+    position: relative;
+    display: block;
+    font-size: 20px;
+    font-weight: 400;
+    margin: 0 0 30px 0;
+}
+
+.t2::after {
+    content: "";
+    position: absolute;
+    top: 25px;
+    left: 0;
+    width: 150px;
+    height: 1px;
+    background: #ddd;
+}
+
+.sect>ul {
+    display: flex;
+    gap: 30px;
+}
+
+.sect ul li {
+    border: 1px solid #ddd;
+    padding: 20px;
+}
+
+.sect ul li .t3 {
+    display: block;
+    font-size: 20px;
+    margin: 0 0 10px 0;
+}
+
+
+/* * {
+    outline: 1px solid tomato;
+} */
