@@ -44,37 +44,155 @@
 
 .outline ul li .b_con .explain {
     font-size: 14px;
+    line-height: 18px;
 }
 
-.message>.bg {
-    position: relative;
-}
+/* CEO 인사말 */
 
-.message .bg>img {
+.message>img {
     width: 100%;
+    margin: 0 0 -100px 0;
 }
 
-.message .c_text>img {
-    position: absolute;
-    top: 50%;
+.message .bg {
+    margin: 0 0 20px 0;
+}
+
+.message .c_text {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
 .message .c_text .h {
-    position: absolute;
-    top: 50%;
-    left: 60%;
-
     font-size: 25px;
+    line-height: 35px;
+    color: #008000;
 }
 
-.message>.f_inner {
-    position: relative;
+.message .c_text .h::before {
+    content: "";
+    position: absolute;
+    width: 150px;
+    height: 1px;
+    background: #008000;
+    left: calc(50% + 70px);
+    top: 50%;
+    transform: translate(-50%, -50%);
 }
 
 .message .a_body {
     position: relative;
 }
 
-* {
-    outline: 1px solid tomato;
+.t {
+    font-size: 20px;
+    font-weight: 300;
+    line-height: 35px;
+    margin: 0 0 15px 0;
 }
+
+.message .a_body .r {
+    text-align: right;
+}
+
+.message .a_body .r b {
+    font-weight: bold;
+}
+
+.message {
+    padding: 0 0 200px 0;
+    border-bottom: 1px solid #ddd;
+}
+
+
+/* 기업연혁 */
+
+.history {
+    border-bottom: 1px solid #ddd;
+}
+
+.history .group {
+    position: relative;
+    width: 100%;
+}
+
+.history .group .img {
+    width: 50%;
+}
+
+.history .group .his {
+    position: relative;
+    width: 50%;
+    padding-left: 20px;
+}
+
+.history .group .his .tit {
+    font-size: 35px;
+    font-weight: 500;
+    margin: 0 0 20px 0;
+}
+
+.history .his .his_sect {
+    display: flex;
+    gap: 30px;
+    padding: 20px 0 20px 0;
+    border-bottom: 1px solid #ddd;
+}
+
+.history .his .his_sect:last-child {
+    border-bottom: none;
+}
+
+.history .his .his_sect .year {
+    font-size: 20px;
+    font-weight: 400;
+}
+
+.history .his .his_sect ul li {
+    font-size: 20px;
+    font-weight: 300;
+    margin: 0 0 10px 0;
+}
+
+.history .img {
+    display: flex;
+    flex-direction: column;
+    gap: 300px;
+    padding: 0 50px 0 0;
+}
+
+/* 비전 및 핵심가치 */
+
+.vision {
+    padding: 0 0 100px 0;
+}
+
+.vision .title>.ff {
+    font-size: 25px;
+    font-weight: 400;
+    line-height: 60px;
+    color: rgb(150, 150, 150);
+}
+
+.vision .p_v {
+    font-size: 50px;
+    margin: 0 0 30px 0;
+}
+
+.vision .p_v span {
+    color: #3baf29;
+    padding: 0 10px 0 10px;
+}
+
+.vision ul {
+    display: flex;
+    gap: 30px;
+    justify-content: center;
+}
+
+
+/* * {
+    outline: 1px solid tomato;
+} */

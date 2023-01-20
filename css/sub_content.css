@@ -39,17 +39,23 @@
 
 .sub_contents .brand_group {}
 
-.sub_contents .brand_group>ul {
+.sub_contents .brand_group ul {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: 30px;
 }
 
-.sub_contents .brand_group>ul>li {
+.sub_contents .brand_group ul li {
     border: 1px solid #ddd;
     height: 200px;
-    display: block;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
+
+/* * {
+    outline: 1px solid tomato;
+} */
 
 
 .sub_contents .brand_group>ul>li>.img_b {
@@ -152,12 +158,12 @@
     border-top: 1px solid #ddd;
 }
 
-.talant .img_t {
+.img_t {
     position: relative;
 }
 
 
-.talant .img_t .txt_box {
+.img_t .txt_box {
     position: absolute;
     top: 50%;
     left: 50%;
@@ -168,13 +174,13 @@
     text-align: center;
 }
 
-.talant .img_t .txt_box p {
+.img_t .txt_box p {
     font-size: 40px;
     font-weight: 600;
     margin: 0 0 10px 0;
 }
 
-.talant .img_t .txt_box span {
+.img_t .txt_box span {
     display: block;
     font-size: 20px;
 }
@@ -221,8 +227,3 @@
     font-size: 20px;
     margin: 0 0 10px 0;
 }
-
-
-/* * {
-    outline: 1px solid tomato;
-} */
